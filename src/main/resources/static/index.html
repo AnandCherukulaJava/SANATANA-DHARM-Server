@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANATANA-DHARM API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #ff6b35;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .endpoint {
+            background: #f8f9fa;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #007bff;
+            font-family: monospace;
+        }
+        .method {
+            font-weight: bold;
+            color: #28a745;
+        }
+        .method.post { color: #ffc107; }
+        .method.put { color: #17a2b8; }
+        .method.delete { color: #dc3545; }
+        .description {
+            color: #666;
+            font-style: italic;
+            margin-top: 5px;
+        }
+        .roles {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .role {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 5px 10px;
+            margin: 2px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+        .default-credentials {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🕉️ SANATANA-DHARM API Server</h1>
+        
+        <div class="section">
+            <h2>Welcome to SANATANA-DHARM API</h2>
+            <p>This is a Spring Boot application with JWT-based authentication and role-based authorization.</p>
+            
+            <div class="default-credentials">
+                <h3>Default Super Admin Credentials:</h3>
+                <p><strong>Username:</strong> superadmin</p>
+                <p><strong>Password:</strong> SuperAdmin@123</p>
+                <p><strong>Email:</strong> superadmin@sanatanadharm.com</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Available Roles</h2>
+            <div class="roles">
+                <span class="role">USER</span>
+                <span class="role">SUPER_USER</span>
+                <span class="role">ADMIN</span>
+                <span class="role">SUPER_ADMIN</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Authentication Endpoints</h2>
+            
+            <div class="endpoint">
+                <span class="method post">POST</span> /api/auth/signup
+                <div class="description">Register a new user</div>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method post">POST</span> /api/auth/signin
+                <div class="description">Login with username/email and password</div>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method post">POST</span> /api/auth/forgot-password
+                <div class="description">Request password reset</div>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method post">POST</span> /api/auth/reset-password
+                <div class="description">Reset password with token</div>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">GET</span> /api/auth/verify-email?token={token}
+                <div class="description">Verify email address</div>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method post">POST</span> /api/auth/refresh-token
+                <div class="description">Refresh JWT token</div>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method post">POST</span> /api/auth/signout
+                <div class="description">Logout user</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Test Endpoints</h2>
+            
+            <div class="endpoint">
+                <span class="method">GET</span> /api/test/all
+                <div class="description">Public access - no authentication required</div>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">GET</span> /api/test/user
+                <div class="description">Requires USER, SUPER_USER, ADMIN, or SUPER_ADMIN role</div>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">GET</span> /api/test/superuser
+                <div class="description">Requires SUPER_USER, ADMIN, or SUPER_ADMIN role</div>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">GET</span> /api/test/admin
+                <div class="description">Requires ADMIN or SUPER_ADMIN role</div>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">GET</span> /api/test/superadmin
+                <div class="description">Requires SUPER_ADMIN role</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>User Endpoints</h2>
+            
+            <div class="endpoint">
+                <span class="method">GET</span> /api/user/profile
+                <div class="description">Get current user profile</div>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">GET</span> /api/user/dashboard
+                <div class="description">Get user dashboard</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Admin Endpoints</h2>
+            
+            <div class="endpoint">
+                <span class="method">GET</span> /api/admin/dashboard
+                <div class="description">Get admin dashboard with statistics</div>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">GET</span> /api/admin/users
+                <div class="description">Get all users with pagination</div>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">GET</span> /api/admin/users/{id}
+                <div class="description">Get user by ID</div>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method put">PUT</span> /api/admin/users/{id}/enable
+                <div class="description">Enable user account</div>
+            </div>
+            
+            <div class="endpoint">
+                <span class="method put">PUT</span> /api/admin/users/{id}/disable
+                <div class="description">Disable user account</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>How to Use</h2>
+            <ol>
+                <li>Start by testing the public endpoint: <code>GET /api/test/all</code></li>
+                <li>Register a new user: <code>POST /api/auth/signup</code></li>
+                <li>Login with credentials: <code>POST /api/auth/signin</code></li>
+                <li>Use the JWT token in Authorization header: <code>Bearer {token}</code></li>
+                <li>Access protected endpoints based on your role</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
