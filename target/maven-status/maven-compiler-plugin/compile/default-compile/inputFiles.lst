@@ -7,12 +7,14 @@
 /workspace/SANATANA-DHARM-Server/src/main/java/com/sanatanadharm/app/entity/Role.java
 /workspace/SANATANA-DHARM-Server/src/main/java/com/sanatanadharm/app/config/DataInitializer.java
 /workspace/SANATANA-DHARM-Server/src/main/java/com/sanatanadharm/app/controller/AdminController.java
+/workspace/SANATANA-DHARM-Server/src/main/java/com/sanatanadharm/app/controller/StaticController.java
 /workspace/SANATANA-DHARM-Server/src/main/java/com/sanatanadharm/app/security/jwt/AuthTokenFilter.java
 /workspace/SANATANA-DHARM-Server/src/main/java/com/sanatanadharm/app/security/jwt/AuthEntryPointJwt.java
 /workspace/SANATANA-DHARM-Server/src/main/java/com/sanatanadharm/app/dto/response/MessageResponse.java
 /workspace/SANATANA-DHARM-Server/src/main/java/com/sanatanadharm/app/dto/request/ResetPasswordRequest.java
 /workspace/SANATANA-DHARM-Server/src/main/java/com/sanatanadharm/app/repository/UserRepository.java
 /workspace/SANATANA-DHARM-Server/src/main/java/com/sanatanadharm/app/service/AuthService.java
+/workspace/SANATANA-DHARM-Server/src/main/java/com/sanatanadharm/app/config/SwaggerConfig.java
 /workspace/SANATANA-DHARM-Server/src/main/java/com/sanatanadharm/app/controller/TestController.java
 /workspace/SANATANA-DHARM-Server/src/main/java/com/sanatanadharm/app/dto/request/ForgotPasswordRequest.java
 /workspace/SANATANA-DHARM-Server/src/main/java/com/sanatanadharm/app/service/UserDetailsServiceImpl.java

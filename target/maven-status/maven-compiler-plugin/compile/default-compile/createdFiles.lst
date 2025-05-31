@@ -5,12 +5,14 @@ com/sanatanadharm/app/security/jwt/AuthTokenFilter.class
 com/sanatanadharm/app/controller/AdminController.class
 com/sanatanadharm/app/entity/RoleName.class
 com/sanatanadharm/app/dto/response/JwtResponse.class
+com/sanatanadharm/app/config/SwaggerConfig.class
 com/sanatanadharm/app/config/DataInitializer.class
 com/sanatanadharm/app/controller/UserController.class
 com/sanatanadharm/app/exception/GlobalExceptionHandler.class
 com/sanatanadharm/app/service/AuthService.class
 com/sanatanadharm/app/dto/request/RegisterRequest.class
 com/sanatanadharm/app/dto/request/ForgotPasswordRequest.class
+com/sanatanadharm/app/controller/StaticController.class
 com/sanatanadharm/app/repository/UserRepository.class
 com/sanatanadharm/app/security/WebSecurityConfig.class
 com/sanatanadharm/app/security/jwt/AuthEntryPointJwt.class

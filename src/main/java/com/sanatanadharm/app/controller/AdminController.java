@@ -4,6 +4,11 @@ import com.sanatanadharm.app.entity.User;
 import com.sanatanadharm.app.entity.Role;
 import com.sanatanadharm.app.repository.UserRepository;
 import com.sanatanadharm.app.repository.RoleRepository;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -21,6 +26,8 @@ import java.util.Map;
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/admin")
+@Tag(name = "Admin", description = "Admin management APIs")
+@SecurityRequirement(name = "Bearer Authentication")
 public class AdminController {
     
     @Autowired
@@ -30,6 +37,12 @@ public class AdminController {
     RoleRepository roleRepository;
     
     @GetMapping("/dashboard")
+    @Operation(summary = "Admin Dashboard", description = "Get admin dashboard with user statistics")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Dashboard data retrieved successfully"),
+        @ApiResponse(responseCode = "401", description = "Unauthorized"),
+        @ApiResponse(responseCode = "403", description = "Forbidden")
+    })
     @PreAuthorize("hasRole('ADMIN') or hasRole('SUPER_ADMIN')")
     public ResponseEntity<?> getAdminDashboard() {
         Map<String, Object> dashboard = new HashMap<>();
@@ -50,6 +63,12 @@ public class AdminController {
     }
     
     @GetMapping("/users")
+    @Operation(summary = "Get All Users", description = "Get paginated list of all users")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Users retrieved successfully"),
+        @ApiResponse(responseCode = "401", description = "Unauthorized"),
+        @ApiResponse(responseCode = "403", description = "Forbidden")
+    })
     @PreAuthorize("hasRole('ADMIN') or hasRole('SUPER_ADMIN')")
     public ResponseEntity<?> getAllUsers(
             @RequestParam(defaultValue = "0") int page,
@@ -68,6 +87,13 @@ public class AdminController {
     }
     
     @GetMapping("/users/{id}")
+    @Operation(summary = "Get User by ID", description = "Get user details by ID")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "User retrieved successfully"),
+        @ApiResponse(responseCode = "404", description = "User not found"),
+        @ApiResponse(responseCode = "401", description = "Unauthorized"),
+        @ApiResponse(responseCode = "403", description = "Forbidden")
+    })
     @PreAuthorize("hasRole('ADMIN') or hasRole('SUPER_ADMIN')")
     public ResponseEntity<?> getUserById(@PathVariable Long id) {
         User user = userRepository.findById(id).orElse(null);
@@ -80,6 +106,13 @@ public class AdminController {
     }
     
     @PutMapping("/users/{id}/enable")
+    @Operation(summary = "Enable User", description = "Enable a user account")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "User enabled successfully"),
+        @ApiResponse(responseCode = "404", description = "User not found"),
+        @ApiResponse(responseCode = "401", description = "Unauthorized"),
+        @ApiResponse(responseCode = "403", description = "Forbidden")
+    })
     @PreAuthorize("hasRole('ADMIN') or hasRole('SUPER_ADMIN')")
     public ResponseEntity<?> enableUser(@PathVariable Long id) {
         User user = userRepository.findById(id).orElse(null);
@@ -99,6 +132,13 @@ public class AdminController {
     }
     
     @PutMapping("/users/{id}/disable")
+    @Operation(summary = "Disable User", description = "Disable a user account")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "User disabled successfully"),
+        @ApiResponse(responseCode = "404", description = "User not found"),
+        @ApiResponse(responseCode = "401", description = "Unauthorized"),
+        @ApiResponse(responseCode = "403", description = "Forbidden")
+    })
     @PreAuthorize("hasRole('ADMIN') or hasRole('SUPER_ADMIN')")
     public ResponseEntity<?> disableUser(@PathVariable Long id) {
         User user = userRepository.findById(id).orElse(null);
@@ -118,6 +158,12 @@ public class AdminController {
     }
     
     @GetMapping("/roles")
+    @Operation(summary = "Get All Roles", description = "Get list of all available roles")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "Roles retrieved successfully"),
+        @ApiResponse(responseCode = "401", description = "Unauthorized"),
+        @ApiResponse(responseCode = "403", description = "Forbidden")
+    })
     @PreAuthorize("hasRole('ADMIN') or hasRole('SUPER_ADMIN')")
     public ResponseEntity<?> getAllRoles() {
         List<Role> roles = roleRepository.findAll();
