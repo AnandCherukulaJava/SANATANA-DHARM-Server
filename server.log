@@ -1,0 +1,3126 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36mcom.sanatanadharm:sanatana-dharm[0;1m >------------------[m
+[[1;34mINFO[m] [1mBuilding SANATANA-DHARM 1.0.0[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:3.2.5:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36msanatana-dharm[0;1m >>>[m
+[[1;33mWARNING[m] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:resources[m [1m(default-resources)[m @ [36msanatana-dharm[0;1m ---[m
+[[1;34mINFO[m] Copying 1 resource from src/main/resources to target/classes
+[[1;34mINFO[m] Copying 1 resource from src/main/resources to target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36msanatana-dharm[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module! :source
+[[1;34mINFO[m] Compiling 26 source files with javac [debug release 17] to target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:testResources[m [1m(default-testResources)[m @ [36msanatana-dharm[0;1m ---[m
+[[1;34mINFO[m] skip non existing resourceDirectory /workspace/SANATANA-DHARM-Server/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36msanatana-dharm[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module! :dependency
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:3.2.5:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36msanatana-dharm[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:3.2.5:run[m [1m(default-cli)[m @ [36msanatana-dharm[0;1m ---[m
+[[1;34mINFO[m] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2025-05-31 10:30:29 - Starting SanatanaDharmApplication using Java 17.0.15 with PID 7053 (/workspace/SANATANA-DHARM-Server/target/classes started by root in /workspace/SANATANA-DHARM-Server)
+2025-05-31 10:30:29 - Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-05-31 10:30:29 - No active profile set, falling back to 1 default profile: "default"
+2025-05-31 10:30:29 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-31 10:30:29 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-31 10:30:30 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-31 10:30:30 - Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2025-05-31 10:30:30 - Tomcat initialized with port 12000 (http)
+2025-05-31 10:30:30 - Starting service [Tomcat]
+2025-05-31 10:30:30 - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-05-31 10:30:30 - Initializing Spring embedded WebApplicationContext
+2025-05-31 10:30:30 - Root WebApplicationContext: initialization completed in 1131 ms
+2025-05-31 10:30:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-31 10:30:31 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-31 10:30:31 - HHH000026: Second-level cache disabled
+2025-05-31 10:30:31 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-31 10:30:31 - HikariPool-1 - Starting...
+2025-05-31 10:30:31 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10023ee0
+2025-05-31 10:30:31 - HikariPool-1 - Start completed.
+2025-05-31 10:30:31 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-31 10:30:31 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-31 10:30:31 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-31 10:30:32 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-31 10:30:32 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-31 10:30:32 - Filter 'authenticationJwtTokenFilter' configured for use
+2025-05-31 10:30:32 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-31 10:30:32 - Adding welcome page: class path resource [static/index.html]
+2025-05-31 10:30:32 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5260c66d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5fc529ef, org.springframework.security.web.context.SecurityContextHolderFilter@5a8573fb, org.springframework.security.web.header.HeaderWriterFilter@4b505a4, org.springframework.web.filter.CorsFilter@24b37006, org.springframework.security.web.authentication.logout.LogoutFilter@377e5743, com.sanatanadharm.app.security.jwt.AuthTokenFilter@d178f4d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f6f7425, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34449a44, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46cfcd67, org.springframework.security.web.session.SessionManagementFilter@7ce21808, org.springframework.security.web.access.ExceptionTranslationFilter@5b368dcc, org.springframework.security.web.access.intercept.AuthorizationFilter@f004513]
+2025-05-31 10:30:33 - LiveReload server is running on port 35729
+2025-05-31 10:30:33 - Tomcat started on port 12000 (http) with context path '/api'
+2025-05-31 10:30:33 - Started SanatanaDharmApplication in 3.701 seconds (process running for 4.022)
+2025-05-31 10:30:33 - Initializing roles...
+2025-05-31 10:30:33 - 
+    select
+        r1_0.id 
+    from
+        roles r1_0 
+    where
+        r1_0.name=? 
+    limit
+        ?
+Hibernate: 
+    select
+        r1_0.id 
+    from
+        roles r1_0 
+    where
+        r1_0.name=? 
+    limit
+        ?
+2025-05-31 10:30:33 - 
+    select
+        r1_0.id 
+    from
+        roles r1_0 
+    where
+        r1_0.name=? 
+    limit
+        ?
+Hibernate: 
+    select
+        r1_0.id 
+    from
+        roles r1_0 
+    where
+        r1_0.name=? 
+    limit
+        ?
+2025-05-31 10:30:33 - 
+    select
+        r1_0.id 
+    from
+        roles r1_0 
+    where
+        r1_0.name=? 
+    limit
+        ?
+Hibernate: 
+    select
+        r1_0.id 
+    from
+        roles r1_0 
+    where
+        r1_0.name=? 
+    limit
+        ?
+2025-05-31 10:30:33 - 
+    select
+        r1_0.id 
+    from
+        roles r1_0 
+    where
+        r1_0.name=? 
+    limit
+        ?
+Hibernate: 
+    select
+        r1_0.id 
+    from
+        roles r1_0 
+    where
+        r1_0.name=? 
+    limit
+        ?
+2025-05-31 10:30:33 - Roles initialization completed.
+2025-05-31 10:30:33 - Checking for Super Admin user...
+2025-05-31 10:30:33 - 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    limit
+        ?
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    limit
+        ?
+2025-05-31 10:30:33 - Super Admin user already exists
+2025-05-31 10:30:48 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-31 10:30:48 - Initializing Servlet 'dispatcherServlet'
+2025-05-31 10:30:48 - Completed initialization in 1 ms
+2025-05-31 10:30:48 - Securing POST /auth/signin
+2025-05-31 10:30:48 - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-31 10:30:48 - Secured POST /auth/signin
+2025-05-31 10:30:49 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:30:49 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:30:49 - Authenticated user
+2025-05-31 10:30:49 - 
+    update
+        users 
+    set
+        created_at=?,
+        email=?,
+        email_verified=?,
+        first_name=?,
+        is_account_non_expired=?,
+        is_account_non_locked=?,
+        is_credentials_non_expired=?,
+        is_enabled=?,
+        last_login=?,
+        last_name=?,
+        password=?,
+        phone_number=?,
+        reset_token=?,
+        reset_token_expiry=?,
+        updated_at=?,
+        username=?,
+        verification_token=?,
+        verification_token_expiry=? 
+    where
+        id=?
+Hibernate: 
+    update
+        users 
+    set
+        created_at=?,
+        email=?,
+        email_verified=?,
+        first_name=?,
+        is_account_non_expired=?,
+        is_account_non_locked=?,
+        is_credentials_non_expired=?,
+        is_enabled=?,
+        last_login=?,
+        last_name=?,
+        password=?,
+        phone_number=?,
+        reset_token=?,
+        reset_token_expiry=?,
+        updated_at=?,
+        username=?,
+        verification_token=?,
+        verification_token_expiry=? 
+    where
+        id=?
+2025-05-31 10:30:49 - Securing GET /admin/users
+2025-05-31 10:30:49 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:30:49 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:30:49 - Secured GET /admin/users
+2025-05-31 10:30:49 - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.AdminController.getAllUsers(int,int,java.lang.String,java.lang.String); target is of class [com.sanatanadharm.app.controller.AdminController]
+2025-05-31 10:30:49 - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.AdminController.getAllUsers(int,int,java.lang.String,java.lang.String); target is of class [com.sanatanadharm.app.controller.AdminController]
+2025-05-31 10:30:49 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    order by
+        u1_0.id 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    order by
+        u1_0.id 
+    limit
+        ?, ?
+2025-05-31 10:30:49 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:30:49 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:30:55 - Securing POST /auth/signin
+2025-05-31 10:30:55 - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-31 10:30:55 - Secured POST /auth/signin
+2025-05-31 10:30:55 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:30:55 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:30:55 - Authenticated user
+2025-05-31 10:30:55 - 
+    update
+        users 
+    set
+        created_at=?,
+        email=?,
+        email_verified=?,
+        first_name=?,
+        is_account_non_expired=?,
+        is_account_non_locked=?,
+        is_credentials_non_expired=?,
+        is_enabled=?,
+        last_login=?,
+        last_name=?,
+        password=?,
+        phone_number=?,
+        reset_token=?,
+        reset_token_expiry=?,
+        updated_at=?,
+        username=?,
+        verification_token=?,
+        verification_token_expiry=? 
+    where
+        id=?
+Hibernate: 
+    update
+        users 
+    set
+        created_at=?,
+        email=?,
+        email_verified=?,
+        first_name=?,
+        is_account_non_expired=?,
+        is_account_non_locked=?,
+        is_credentials_non_expired=?,
+        is_enabled=?,
+        last_login=?,
+        last_name=?,
+        password=?,
+        phone_number=?,
+        reset_token=?,
+        reset_token_expiry=?,
+        updated_at=?,
+        username=?,
+        verification_token=?,
+        verification_token_expiry=? 
+    where
+        id=?
+2025-05-31 10:31:00 - Securing GET /admin/roles
+2025-05-31 10:31:00 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:31:00 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:31:00 - Secured GET /admin/roles
+2025-05-31 10:31:00 - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.AdminController.getAllRoles(); target is of class [com.sanatanadharm.app.controller.AdminController]
+2025-05-31 10:31:00 - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.AdminController.getAllRoles(); target is of class [com.sanatanadharm.app.controller.AdminController]
+2025-05-31 10:31:00 - 
+    select
+        r1_0.id,
+        r1_0.created_at,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at 
+    from
+        roles r1_0
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.created_at,
+        r1_0.description,
+        r1_0.name,
+        r1_0.updated_at 
+    from
+        roles r1_0
+2025-05-31 10:31:00 - 
+    select
+        u1_0.role_id,
+        u1_1.id,
+        u1_1.created_at,
+        u1_1.email,
+        u1_1.email_verified,
+        u1_1.first_name,
+        u1_1.is_account_non_expired,
+        u1_1.is_account_non_locked,
+        u1_1.is_credentials_non_expired,
+        u1_1.is_enabled,
+        u1_1.last_login,
+        u1_1.last_name,
+        u1_1.password,
+        u1_1.phone_number,
+        u1_1.reset_token,
+        u1_1.reset_token_expiry,
+        u1_1.updated_at,
+        u1_1.username,
+        u1_1.verification_token,
+        u1_1.verification_token_expiry 
+    from
+        user_roles u1_0 
+    join
+        users u1_1 
+            on u1_1.id=u1_0.user_id 
+    where
+        u1_0.role_id=?
+Hibernate: 
+    select
+        u1_0.role_id,
+        u1_1.id,
+        u1_1.created_at,
+        u1_1.email,
+        u1_1.email_verified,
+        u1_1.first_name,
+        u1_1.is_account_non_expired,
+        u1_1.is_account_non_locked,
+        u1_1.is_credentials_non_expired,
+        u1_1.is_enabled,
+        u1_1.last_login,
+        u1_1.last_name,
+        u1_1.password,
+        u1_1.phone_number,
+        u1_1.reset_token,
+        u1_1.reset_token_expiry,
+        u1_1.updated_at,
+        u1_1.username,
+        u1_1.verification_token,
+        u1_1.verification_token_expiry 
+    from
+        user_roles u1_0 
+    join
+        users u1_1 
+            on u1_1.id=u1_0.user_id 
+    where
+        u1_0.role_id=?
+2025-05-31 10:31:00 - 
+    select
+        u1_0.role_id,
+        u1_1.id,
+        u1_1.created_at,
+        u1_1.email,
+        u1_1.email_verified,
+        u1_1.first_name,
+        u1_1.is_account_non_expired,
+        u1_1.is_account_non_locked,
+        u1_1.is_credentials_non_expired,
+        u1_1.is_enabled,
+        u1_1.last_login,
+        u1_1.last_name,
+        u1_1.password,
+        u1_1.phone_number,
+        u1_1.reset_token,
+        u1_1.reset_token_expiry,
+        u1_1.updated_at,
+        u1_1.username,
+        u1_1.verification_token,
+        u1_1.verification_token_expiry 
+    from
+        user_roles u1_0 
+    join
+        users u1_1 
+            on u1_1.id=u1_0.user_id 
+    where
+        u1_0.role_id=?
+Hibernate: 
+    select
+        u1_0.role_id,
+        u1_1.id,
+        u1_1.created_at,
+        u1_1.email,
+        u1_1.email_verified,
+        u1_1.first_name,
+        u1_1.is_account_non_expired,
+        u1_1.is_account_non_locked,
+        u1_1.is_credentials_non_expired,
+        u1_1.is_enabled,
+        u1_1.last_login,
+        u1_1.last_name,
+        u1_1.password,
+        u1_1.phone_number,
+        u1_1.reset_token,
+        u1_1.reset_token_expiry,
+        u1_1.updated_at,
+        u1_1.username,
+        u1_1.verification_token,
+        u1_1.verification_token_expiry 
+    from
+        user_roles u1_0 
+    join
+        users u1_1 
+            on u1_1.id=u1_0.user_id 
+    where
+        u1_0.role_id=?
+2025-05-31 10:31:00 - 
+    select
+        u1_0.role_id,
+        u1_1.id,
+        u1_1.created_at,
+        u1_1.email,
+        u1_1.email_verified,
+        u1_1.first_name,
+        u1_1.is_account_non_expired,
+        u1_1.is_account_non_locked,
+        u1_1.is_credentials_non_expired,
+        u1_1.is_enabled,
+        u1_1.last_login,
+        u1_1.last_name,
+        u1_1.password,
+        u1_1.phone_number,
+        u1_1.reset_token,
+        u1_1.reset_token_expiry,
+        u1_1.updated_at,
+        u1_1.username,
+        u1_1.verification_token,
+        u1_1.verification_token_expiry 
+    from
+        user_roles u1_0 
+    join
+        users u1_1 
+            on u1_1.id=u1_0.user_id 
+    where
+        u1_0.role_id=?
+Hibernate: 
+    select
+        u1_0.role_id,
+        u1_1.id,
+        u1_1.created_at,
+        u1_1.email,
+        u1_1.email_verified,
+        u1_1.first_name,
+        u1_1.is_account_non_expired,
+        u1_1.is_account_non_locked,
+        u1_1.is_credentials_non_expired,
+        u1_1.is_enabled,
+        u1_1.last_login,
+        u1_1.last_name,
+        u1_1.password,
+        u1_1.phone_number,
+        u1_1.reset_token,
+        u1_1.reset_token_expiry,
+        u1_1.updated_at,
+        u1_1.username,
+        u1_1.verification_token,
+        u1_1.verification_token_expiry 
+    from
+        user_roles u1_0 
+    join
+        users u1_1 
+            on u1_1.id=u1_0.user_id 
+    where
+        u1_0.role_id=?
+2025-05-31 10:31:00 - 
+    select
+        u1_0.role_id,
+        u1_1.id,
+        u1_1.created_at,
+        u1_1.email,
+        u1_1.email_verified,
+        u1_1.first_name,
+        u1_1.is_account_non_expired,
+        u1_1.is_account_non_locked,
+        u1_1.is_credentials_non_expired,
+        u1_1.is_enabled,
+        u1_1.last_login,
+        u1_1.last_name,
+        u1_1.password,
+        u1_1.phone_number,
+        u1_1.reset_token,
+        u1_1.reset_token_expiry,
+        u1_1.updated_at,
+        u1_1.username,
+        u1_1.verification_token,
+        u1_1.verification_token_expiry 
+    from
+        user_roles u1_0 
+    join
+        users u1_1 
+            on u1_1.id=u1_0.user_id 
+    where
+        u1_0.role_id=?
+Hibernate: 
+    select
+        u1_0.role_id,
+        u1_1.id,
+        u1_1.created_at,
+        u1_1.email,
+        u1_1.email_verified,
+        u1_1.first_name,
+        u1_1.is_account_non_expired,
+        u1_1.is_account_non_locked,
+        u1_1.is_credentials_non_expired,
+        u1_1.is_enabled,
+        u1_1.last_login,
+        u1_1.last_name,
+        u1_1.password,
+        u1_1.phone_number,
+        u1_1.reset_token,
+        u1_1.reset_token_expiry,
+        u1_1.updated_at,
+        u1_1.username,
+        u1_1.verification_token,
+        u1_1.verification_token_expiry 
+    from
+        user_roles u1_0 
+    join
+        users u1_1 
+            on u1_1.id=u1_0.user_id 
+    where
+        u1_0.role_id=?
+2025-05-31 10:31:07 - Securing GET /admin/dashboard
+2025-05-31 10:31:07 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:31:07 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:31:07 - Secured GET /admin/dashboard
+2025-05-31 10:31:07 - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.AdminController.getAdminDashboard(); target is of class [com.sanatanadharm.app.controller.AdminController]
+2025-05-31 10:31:07 - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.AdminController.getAdminDashboard(); target is of class [com.sanatanadharm.app.controller.AdminController]
+2025-05-31 10:31:07 - 
+    select
+        count(*) 
+    from
+        users u1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        users u1_0
+2025-05-31 10:31:07 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.is_enabled=1
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.is_enabled=1
+2025-05-31 10:31:07 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.email_verified=0
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.email_verified=0
+2025-05-31 10:31:07 - 
+    select
+        count(u1_0.id) 
+    from
+        users u1_0 
+    where
+        u1_0.created_at>=?
+Hibernate: 
+    select
+        count(u1_0.id) 
+    from
+        users u1_0 
+    where
+        u1_0.created_at>=?
+2025-05-31 10:31:29 - Securing GET /test/all
+2025-05-31 10:31:29 - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-31 10:31:29 - Secured GET /test/all
+2025-05-31 10:31:29 - Securing POST /auth/signin
+2025-05-31 10:31:29 - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-31 10:31:29 - Secured POST /auth/signin
+2025-05-31 10:31:29 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:31:29 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:31:29 - Authenticated user
+2025-05-31 10:31:29 - 
+    update
+        users 
+    set
+        created_at=?,
+        email=?,
+        email_verified=?,
+        first_name=?,
+        is_account_non_expired=?,
+        is_account_non_locked=?,
+        is_credentials_non_expired=?,
+        is_enabled=?,
+        last_login=?,
+        last_name=?,
+        password=?,
+        phone_number=?,
+        reset_token=?,
+        reset_token_expiry=?,
+        updated_at=?,
+        username=?,
+        verification_token=?,
+        verification_token_expiry=? 
+    where
+        id=?
+Hibernate: 
+    update
+        users 
+    set
+        created_at=?,
+        email=?,
+        email_verified=?,
+        first_name=?,
+        is_account_non_expired=?,
+        is_account_non_locked=?,
+        is_credentials_non_expired=?,
+        is_enabled=?,
+        last_login=?,
+        last_name=?,
+        password=?,
+        phone_number=?,
+        reset_token=?,
+        reset_token_expiry=?,
+        updated_at=?,
+        username=?,
+        verification_token=?,
+        verification_token_expiry=? 
+    where
+        id=?
+2025-05-31 10:31:29 - Securing GET /admin/users
+2025-05-31 10:31:29 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:31:29 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:31:29 - Secured GET /admin/users
+2025-05-31 10:31:29 - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.AdminController.getAllUsers(int,int,java.lang.String,java.lang.String); target is of class [com.sanatanadharm.app.controller.AdminController]
+2025-05-31 10:31:29 - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.AdminController.getAllUsers(int,int,java.lang.String,java.lang.String); target is of class [com.sanatanadharm.app.controller.AdminController]
+2025-05-31 10:31:29 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    order by
+        u1_0.id 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    order by
+        u1_0.id 
+    limit
+        ?, ?
+2025-05-31 10:31:29 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:31:29 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:31:30 - Securing GET /admin/users/1
+2025-05-31 10:31:30 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:31:30 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:31:30 - Secured GET /admin/users/1
+2025-05-31 10:31:30 - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.AdminController.getUserById(java.lang.Long); target is of class [com.sanatanadharm.app.controller.AdminController]
+2025-05-31 10:31:30 - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.AdminController.getUserById(java.lang.Long); target is of class [com.sanatanadharm.app.controller.AdminController]
+2025-05-31 10:31:30 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-05-31 10:31:30 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:31:36 - Securing PUT /admin/users/2/disable
+2025-05-31 10:31:36 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:31:36 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:31:36 - Secured PUT /admin/users/2/disable
+2025-05-31 10:31:36 - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.AdminController.disableUser(java.lang.Long); target is of class [com.sanatanadharm.app.controller.AdminController]
+2025-05-31 10:31:36 - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.AdminController.disableUser(java.lang.Long); target is of class [com.sanatanadharm.app.controller.AdminController]
+2025-05-31 10:31:36 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-05-31 10:31:36 - 
+    update
+        users 
+    set
+        created_at=?,
+        email=?,
+        email_verified=?,
+        first_name=?,
+        is_account_non_expired=?,
+        is_account_non_locked=?,
+        is_credentials_non_expired=?,
+        is_enabled=?,
+        last_login=?,
+        last_name=?,
+        password=?,
+        phone_number=?,
+        reset_token=?,
+        reset_token_expiry=?,
+        updated_at=?,
+        username=?,
+        verification_token=?,
+        verification_token_expiry=? 
+    where
+        id=?
+Hibernate: 
+    update
+        users 
+    set
+        created_at=?,
+        email=?,
+        email_verified=?,
+        first_name=?,
+        is_account_non_expired=?,
+        is_account_non_locked=?,
+        is_credentials_non_expired=?,
+        is_enabled=?,
+        last_login=?,
+        last_name=?,
+        password=?,
+        phone_number=?,
+        reset_token=?,
+        reset_token_expiry=?,
+        updated_at=?,
+        username=?,
+        verification_token=?,
+        verification_token_expiry=? 
+    where
+        id=?
+2025-05-31 10:31:40 - Securing PUT /admin/users/2/enable
+2025-05-31 10:31:40 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:31:40 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:31:40 - Secured PUT /admin/users/2/enable
+2025-05-31 10:31:40 - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.AdminController.enableUser(java.lang.Long); target is of class [com.sanatanadharm.app.controller.AdminController]
+2025-05-31 10:31:40 - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.AdminController.enableUser(java.lang.Long); target is of class [com.sanatanadharm.app.controller.AdminController]
+2025-05-31 10:31:40 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-05-31 10:31:40 - 
+    update
+        users 
+    set
+        created_at=?,
+        email=?,
+        email_verified=?,
+        first_name=?,
+        is_account_non_expired=?,
+        is_account_non_locked=?,
+        is_credentials_non_expired=?,
+        is_enabled=?,
+        last_login=?,
+        last_name=?,
+        password=?,
+        phone_number=?,
+        reset_token=?,
+        reset_token_expiry=?,
+        updated_at=?,
+        username=?,
+        verification_token=?,
+        verification_token_expiry=? 
+    where
+        id=?
+Hibernate: 
+    update
+        users 
+    set
+        created_at=?,
+        email=?,
+        email_verified=?,
+        first_name=?,
+        is_account_non_expired=?,
+        is_account_non_locked=?,
+        is_credentials_non_expired=?,
+        is_enabled=?,
+        last_login=?,
+        last_name=?,
+        password=?,
+        phone_number=?,
+        reset_token=?,
+        reset_token_expiry=?,
+        updated_at=?,
+        username=?,
+        verification_token=?,
+        verification_token_expiry=? 
+    where
+        id=?
+2025-05-31 10:31:45 - Securing GET /user/profile
+2025-05-31 10:31:45 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:31:45 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:31:45 - Secured GET /user/profile
+2025-05-31 10:31:45 - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.UserController.getUserProfile(org.springframework.security.core.Authentication); target is of class [com.sanatanadharm.app.controller.UserController]
+2025-05-31 10:31:45 - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.UserController.getUserProfile(org.springframework.security.core.Authentication); target is of class [com.sanatanadharm.app.controller.UserController]
+2025-05-31 10:31:45 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-05-31 10:31:45 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:31:51 - Securing GET /test/user
+2025-05-31 10:31:51 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:31:51 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:31:51 - Secured GET /test/user
+2025-05-31 10:31:51 - Authorizing method invocation ReflectiveMethodInvocation: public java.lang.String com.sanatanadharm.app.controller.TestController.userAccess(); target is of class [com.sanatanadharm.app.controller.TestController]
+2025-05-31 10:31:51 - Authorized method invocation ReflectiveMethodInvocation: public java.lang.String com.sanatanadharm.app.controller.TestController.userAccess(); target is of class [com.sanatanadharm.app.controller.TestController]
+2025-05-31 10:31:56 - Securing GET /test/user
+2025-05-31 10:31:56 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:31:56 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:31:56 - Secured GET /test/user
+2025-05-31 10:31:56 - Authorizing method invocation ReflectiveMethodInvocation: public java.lang.String com.sanatanadharm.app.controller.TestController.userAccess(); target is of class [com.sanatanadharm.app.controller.TestController]
+2025-05-31 10:31:56 - Authorized method invocation ReflectiveMethodInvocation: public java.lang.String com.sanatanadharm.app.controller.TestController.userAccess(); target is of class [com.sanatanadharm.app.controller.TestController]
+2025-05-31 10:32:00 - Securing GET /test/admin
+2025-05-31 10:32:00 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:32:00 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:32:00 - Secured GET /test/admin
+2025-05-31 10:32:00 - Authorizing method invocation ReflectiveMethodInvocation: public java.lang.String com.sanatanadharm.app.controller.TestController.adminAccess(); target is of class [com.sanatanadharm.app.controller.TestController]
+2025-05-31 10:32:00 - Authorized method invocation ReflectiveMethodInvocation: public java.lang.String com.sanatanadharm.app.controller.TestController.adminAccess(); target is of class [com.sanatanadharm.app.controller.TestController]
+2025-05-31 10:32:05 - Securing GET /test/superuser
+2025-05-31 10:32:05 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:32:05 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:32:05 - Secured GET /test/superuser
+2025-05-31 10:32:05 - Authorizing method invocation ReflectiveMethodInvocation: public java.lang.String com.sanatanadharm.app.controller.TestController.superUserAccess(); target is of class [com.sanatanadharm.app.controller.TestController]
+2025-05-31 10:32:05 - Authorized method invocation ReflectiveMethodInvocation: public java.lang.String com.sanatanadharm.app.controller.TestController.superUserAccess(); target is of class [com.sanatanadharm.app.controller.TestController]
+2025-05-31 10:32:06 - Securing GET /
+2025-05-31 10:32:06 - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-31 10:32:06 - Secured GET /
+2025-05-31 10:32:06 - Securing GET /index.html
+2025-05-31 10:32:06 - Secured GET /index.html
+2025-05-31 10:32:09 - Securing POST /auth/signin
+2025-05-31 10:32:09 - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-31 10:32:09 - Secured POST /auth/signin
+2025-05-31 10:32:09 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:32:09 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:32:09 - Authenticated user
+2025-05-31 10:32:09 - 
+    update
+        users 
+    set
+        created_at=?,
+        email=?,
+        email_verified=?,
+        first_name=?,
+        is_account_non_expired=?,
+        is_account_non_locked=?,
+        is_credentials_non_expired=?,
+        is_enabled=?,
+        last_login=?,
+        last_name=?,
+        password=?,
+        phone_number=?,
+        reset_token=?,
+        reset_token_expiry=?,
+        updated_at=?,
+        username=?,
+        verification_token=?,
+        verification_token_expiry=? 
+    where
+        id=?
+Hibernate: 
+    update
+        users 
+    set
+        created_at=?,
+        email=?,
+        email_verified=?,
+        first_name=?,
+        is_account_non_expired=?,
+        is_account_non_locked=?,
+        is_credentials_non_expired=?,
+        is_enabled=?,
+        last_login=?,
+        last_name=?,
+        password=?,
+        phone_number=?,
+        reset_token=?,
+        reset_token_expiry=?,
+        updated_at=?,
+        username=?,
+        verification_token=?,
+        verification_token_expiry=? 
+    where
+        id=?
+2025-05-31 10:32:18 - Securing GET /test/user
+2025-05-31 10:32:18 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:32:18 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:32:18 - Secured GET /test/user
+2025-05-31 10:32:18 - Authorizing method invocation ReflectiveMethodInvocation: public java.lang.String com.sanatanadharm.app.controller.TestController.userAccess(); target is of class [com.sanatanadharm.app.controller.TestController]
+2025-05-31 10:32:18 - Authorized method invocation ReflectiveMethodInvocation: public java.lang.String com.sanatanadharm.app.controller.TestController.userAccess(); target is of class [com.sanatanadharm.app.controller.TestController]
+2025-05-31 10:32:23 - Securing GET /test/admin
+2025-05-31 10:32:23 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:32:23 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:32:23 - Secured GET /test/admin
+2025-05-31 10:32:23 - Authorizing method invocation ReflectiveMethodInvocation: public java.lang.String com.sanatanadharm.app.controller.TestController.adminAccess(); target is of class [com.sanatanadharm.app.controller.TestController]
+2025-05-31 10:32:23 - Failed to authorize ReflectiveMethodInvocation: public java.lang.String com.sanatanadharm.app.controller.TestController.adminAccess(); target is of class [com.sanatanadharm.app.controller.TestController] with authorization manager org.springframework.security.config.annotation.method.configuration.DeferringObservationAuthorizationManager@5e62e014 and decision ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasRole('ADMIN') or hasRole('SUPER_ADMIN')]
+2025-05-31 10:32:23 - Access denied: Access Denied
+2025-05-31 10:32:23 - Resolved [org.springframework.security.access.AccessDeniedException: Access Denied]
+2025-05-31 10:32:27 - Securing GET /admin/users
+2025-05-31 10:32:27 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:32:27 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:32:27 - Responding with 403 status code
+2025-05-31 10:32:27 - Securing GET /error
+2025-05-31 10:32:27 - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-31 10:32:27 - Unauthorized error: Full authentication is required to access this resource
+2025-05-31 10:32:33 - Securing GET /user/profile
+2025-05-31 10:32:33 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+2025-05-31 10:32:33 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+2025-05-31 10:32:33 - Secured GET /user/profile
+2025-05-31 10:32:33 - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.UserController.getUserProfile(org.springframework.security.core.Authentication); target is of class [com.sanatanadharm.app.controller.UserController]
+2025-05-31 10:32:33 - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity com.sanatanadharm.app.controller.UserController.getUserProfile(org.springframework.security.core.Authentication); target is of class [com.sanatanadharm.app.controller.UserController]
+2025-05-31 10:32:33 - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.first_name,
+        u1_0.is_account_non_expired,
+        u1_0.is_account_non_locked,
+        u1_0.is_credentials_non_expired,
+        u1_0.is_enabled,
+        u1_0.last_login,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.reset_token,
+        u1_0.reset_token_expiry,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.verification_token,
+        u1_0.verification_token_expiry 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-05-31 10:32:33 - 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.created_at,
+        r1_1.description,
+        r1_1.name,
+        r1_1.updated_at 
+    from
+        user_roles r1_0 
+    join
+        roles r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        r1_0.user_id=?

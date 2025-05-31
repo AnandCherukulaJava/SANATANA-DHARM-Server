@@ -1,0 +1,57 @@
+server:
+  port: 12000
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: SANATANA-DHARM
+  
+  datasource:
+    url: jdbc:mysql://localhost:3306/sanatana_dharm_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+  
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME:your-email@gmail.com}
+    password: ${MAIL_PASSWORD:your-app-password}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+# JWT Configuration
+jwt:
+  secret: ${JWT_SECRET:sanatanaDharmSecretKeyForJWTTokenGeneration2024}
+  expiration: 86400000 # 24 hours in milliseconds
+  refresh-expiration: 604800000 # 7 days in milliseconds
+
+# Application Configuration
+app:
+  name: SANATANA-DHARM
+  version: 1.0.0
+  frontend-url: ${FRONTEND_URL:https://work-1-nedwsbjkdouwcmux.prod-runtime.all-hands.dev}
+  
+# Logging Configuration
+logging:
+  level:
+    com.sanatanadharm: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
